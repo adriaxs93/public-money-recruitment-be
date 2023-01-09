@@ -4,8 +4,10 @@ namespace VacationRental.Api.Models
 {
     public class BookingBindingModel
     {
+        /// <example>1</example>
         public int RentalId { get; set; }
 
+        /// <example>2023-01-11</example>
         public DateTime Start
         {
             get => _startIgnoreTime;
@@ -13,6 +15,8 @@ namespace VacationRental.Api.Models
         }
 
         private DateTime _startIgnoreTime;
+
+        /// <example>3</example>
         public int Nights { get; set; }
     }
 }
